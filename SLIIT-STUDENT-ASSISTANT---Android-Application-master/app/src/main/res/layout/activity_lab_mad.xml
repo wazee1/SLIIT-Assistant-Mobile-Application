@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x"
+    tools:context=".labMAD">
+
+
+    <Button
+        android:id="@+id/lab1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Labsheet 01"
+        app:layout_constraintEnd_toStartOf="@+id/lab2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lab2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Labsheet 02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lab3"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Labsheet 03"
+        app:layout_constraintEnd_toEndOf="@+id/lab1"
+        app:layout_constraintStart_toStartOf="@+id/lab1"
+        app:layout_constraintTop_toBottomOf="@+id/lab1" />
+
+
+    <Button
+        android:id="@+id/lab4"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:text="Labsheet 04"
+        app:layout_constraintEnd_toEndOf="@+id/lab2"
+        app:layout_constraintStart_toStartOf="@+id/lab2"
+        app:layout_constraintTop_toBottomOf="@+id/lab2" />
+
+
+    <Button
+        android:id="@+id/lab5"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Labsheet 05"
+        app:layout_constraintEnd_toEndOf="@+id/lab3"
+        app:layout_constraintStart_toStartOf="@+id/lab3"
+        app:layout_constraintTop_toBottomOf="@+id/lab3" />
+
+    <Button
+        android:id="@+id/lab6"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Labsheet 06"
+        app:layout_constraintEnd_toEndOf="@+id/lab4"
+        app:layout_constraintStart_toStartOf="@+id/lab4"
+        app:layout_constraintTop_toBottomOf="@+id/lab4" />
+
+    <Button
+        android:id="@+id/lab7"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Labsheet 07"
+        app:layout_constraintEnd_toEndOf="@+id/lab6"
+        app:layout_constraintStart_toStartOf="@+id/lab5"
+        app:layout_constraintTop_toBottomOf="@+id/lab5" />
+</android.support.constraint.ConstraintLayout>

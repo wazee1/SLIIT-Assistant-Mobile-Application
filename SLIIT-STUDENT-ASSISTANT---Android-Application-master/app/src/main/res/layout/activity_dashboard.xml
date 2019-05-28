@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity_dashboard">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/time"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Next Lecture"
+        android:textColor="#01579B"
+        android:padding="6dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="27sp"/>
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="#03A9F4"
+        android:text="----"
+        android:padding="4dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="55sp"/>
+
+    <LinearLayout
+        android:id="@+id/cat"
+        android:layout_below="@id/head"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:elevation="3dp"
+        android:background="@drawable/cat_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/cat2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="year1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:src="@drawable/one"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="6dp"
+                android:text="1st Year"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="year2">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:src="@drawable/two"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="6dp"
+                android:text="2nd Year"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/quote"/>
+
+</RelativeLayout>

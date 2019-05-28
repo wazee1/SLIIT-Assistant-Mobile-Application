@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.assistant.sliit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sliit"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_login" />
+        <activity android:name=".activity_register" />
+        <activity android:name=".activity_dashboard" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".firstYearActivity" />
+        <activity android:name=".YearActivity" />
+        <activity android:name=".frst_frst_rfrnce" />
+        <activity android:name=".frst_scnd_rfrnce">
+            <intent-filter>
+                <action android:name=".frst_scnd_rfrnce" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Y1S1ref">
+            <intent-filter>
+                <action android:name=".Y1S1ref" />
+
+                <category android:name="android.intent.category.APP_BROWSER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".listItemOne" />
+        <activity android:name=".listItemTwo" />
+        <activity android:name=".listItemThree" />
+        <activity android:name=".listItemFour" />
+        <activity android:name=".Y1S11" />
+        <activity android:name=".listItemICS" />
+        <activity android:name=".listItemIP" />
+        <activity android:name=".listItemCS" />
+        <activity android:name=".Y2S1" />
+        <activity android:name=".listItemDSA" />
+        <activity android:name=".listItemMAD" />
+        <activity android:name=".Y2S11" />
+        <activity android:name=".lectureLabTutorial" />
+        <activity android:name=".lectureMAD" />
+        <activity android:name=".labMAD" />
+        <activity android:name=".tuteMAD" />
+        <activity android:name=".lec1MAD" />
+        <activity android:name=".lab1MAD"></activity>
+    </application>
+
+</manifest>

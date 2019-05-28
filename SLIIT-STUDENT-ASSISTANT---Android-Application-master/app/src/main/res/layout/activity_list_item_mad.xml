@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="Mobile Apps Made Simple"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn the process of app creation, from beginning to end. By the end of this book, you will understand all the steps that are necessary to go from having that “big idea” to making an app that can actually affect your life, as well as the lives of millions of other people. This book breaks down the process of app creation into a simple process that just about anyone can understand and follow. Learning how to understand the many jargon words that developers and web experts often use can drive people away who otherwise might seriously stand to benefit from creating their own web apps." />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mad" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
